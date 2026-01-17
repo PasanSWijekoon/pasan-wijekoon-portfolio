@@ -314,36 +314,36 @@ export default function HeroScroll() {
             className="absolute inset-0"
           >
             {/* Top Left (Far) */}
-            <div className="absolute top-[25%] left-0 md:-left-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-2 group">
-              <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
+            <div className="absolute top-[33%] left-4 md:top-[25%] md:-left-[5%] glass-card px-6 md:px-8 py-4 md:py-5 rounded-2xl border-glow transform -rotate-2 group">
+              <h3 className="text-xl md:text-4xl font-bold text-white tracking-tight">
                 Problem Solving
               </h3>
             </div>
 
             {/* Top Right (Far) */}
-            <div className="absolute top-[20%] right-0 md:-right-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform rotate-3">
+            <div className="absolute top-[20%] right-4 md:right-0 md:-right-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform rotate-3">
               <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
                 Critical Thinking
               </h3>
             </div>
 
             {/* Middle Right (Far) */}
-            <div className="absolute top-[50%] right-0 md:-right-[2%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-1">
+            <div className="absolute top-[50%] right-4 md:right-0 md:-right-[2%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-1">
               <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
                 Teamwork
               </h3>
             </div>
 
             {/* Bottom Right (Far) */}
-            <div className="absolute top-[75%] right-0 md:-right-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform rotate-2">
+            <div className="absolute top-[75%] right-4 md:right-0 md:-right-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform rotate-2">
               <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
                 Communication
               </h3>
             </div>
 
             {/* Bottom Left (Far) */}
-            <div className="absolute bottom-[20%] left-0 md:-left-[5%] glass-card px-10 py-6 rounded-2xl border-glow transform rotate-2">
-              <h3 className="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight leading-tight">
+            <div className="absolute bottom-[28%] left-4 md:bottom-[20%] md:-left-[5%] glass-card px-6 md:px-10 py-4 md:py-6 rounded-2xl border-glow transform rotate-2">
+              <h3 className="text-2xl md:text-5xl font-bold text-cyan-400 tracking-tight leading-tight">
                 Stakeholder <br /> Engagement
               </h3>
             </div>
@@ -411,7 +411,7 @@ export default function HeroScroll() {
             </div>
 
             {/* Unit Testing - Bottom Left */}
-            <div className="absolute bottom-[25%] left-0 md:-left-[5%] px-8 py-4 rounded-full bg-emerald-500/10 border border-emerald-500/30 backdrop-blur-md text-emerald-300 font-bold text-xl md:text-3xl transform rotate-12">
+            <div className="absolute bottom-[35%] left-4 md:bottom-[30%] md:-left-[5%] px-8 py-4 rounded-full bg-emerald-500/10 border border-emerald-500/30 backdrop-blur-md text-emerald-300 font-bold text-xl md:text-3xl transform rotate-12">
               Unit & Integration Testing
             </div>
           </motion.div>
