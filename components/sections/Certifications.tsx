@@ -8,7 +8,7 @@ const certs = [
   "Python for AI & Machine Learning",
   "Agile / Scrum Certification",
   "SLIIT Codefest – Merit Award",
-  "Young Computer Scientist (YCS) – Merit Award"
+  "YCS Merit Award"
 ];
 
 export default function Certifications() {
