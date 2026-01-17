@@ -79,7 +79,7 @@ npm run start
 
 Looking for a dedicated Software Engineer Intern for 2025/2026? Let's build something great.
 
--   **Email:** [hello@example.com](mailto:hello@example.com)
+-   **Email:** [hello@example.com](mailto:wijekoonpasan055@gmail.com)
 -   **Website:** [pasanwijekoon.dev](https://pasanwijekoon.dev)
 
 ---
