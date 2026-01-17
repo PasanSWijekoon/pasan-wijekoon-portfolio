@@ -160,6 +160,22 @@ export default function HeroScroll() {
     "I Deliver Full Product Cycles From Sketches And Prototypes To Production-ready Apps And Apis.",
   ];
 
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.5,
+      },
+    },
+  };
+
   return (
     <div ref={containerRef} className="h-[500vh] relative bg-[#02040a]">
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
@@ -188,33 +204,38 @@ export default function HeroScroll() {
           style={{ opacity: heroOpacity, scale: heroScale }}
           className="relative z-20 w-full h-full flex flex-col items-center justify-center pointer-events-none"
         >
-          <div className="flex-1 flex flex-col items-center justify-center w-full max-w-7xl px-6 md:px-12 text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-sm">
+          <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            animate={!isLoading ? "visible" : "hidden"}
+            className="flex-1 flex flex-col items-center justify-center w-full max-w-7xl px-6 md:px-12 text-center space-y-8"
+          >
+            <motion.div variants={textVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
               <span className="text-xs font-mono text-cyan-400 tracking-wider">
                 OPEN FOR WORK 2026
               </span>
-            </div>
+            </motion.div>
 
             <div className="space-y-2">
-              <h2 className="text-sm md:text-base font-mono text-slate-400 tracking-[0.2em] uppercase">
+              <motion.h2 variants={textVariants} className="text-sm md:text-base font-mono text-slate-400 tracking-[0.2em] uppercase">
                 Software Engineer Intern
-              </h2>
-              <h1 className="text-6xl md:text-9xl font-nevera text-white tracking-tighter text-glow">
+              </motion.h2>
+              <motion.h1 variants={textVariants} className="text-6xl md:text-9xl font-nevera text-white tracking-tighter text-glow">
                 PASAN WIJEKOON
-              </h1>
+              </motion.h1>
             </div>
 
-            <p className="max-w-xl mx-auto text-slate-400 text-lg font-light leading-relaxed">
+            <motion.p variants={textVariants} className="max-w-xl mx-auto text-slate-400 text-lg font-light leading-relaxed">
               Building robust{" "}
               <span className="text-cyan-400">backend systems</span> and
               scalable{" "}
               <span className="text-cyan-400">cloud infrastructure</span> with
               engineering precision.
-            </p>
+            </motion.p>
 
             {/* Social Row */}
-            <div className="flex items-center justify-center gap-6 pt-4 pointer-events-auto">
+            <motion.div variants={textVariants} className="flex items-center justify-center gap-6 pt-4 pointer-events-auto">
               <a
                 href="https://github.com/PasanSWijekoon"
                 target="_blank"
@@ -237,8 +258,8 @@ export default function HeroScroll() {
               >
                 <Mail size={20} />
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Marquee Section */}
           <div className="w-full pb-12 overflow-hidden marquee-container pointer-events-auto">
@@ -321,9 +342,8 @@ export default function HeroScroll() {
                 <div className="text-cyan-400 font-bold text-2xl md:text-4xl">
                   OOP Principles
                 </div>
-                {/* Longer Connector Line Right */}
-                <div className="absolute top-1/2 left-full w-24 h-px bg-cyan-400/50 hidden lg:block"></div>
-                <div className="absolute top-1/2 left-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-cyan-400 hidden lg:block"></div>
+                {/* Connector Line Right */}
+                <div className="absolute top-1/2 -right-24 w-24 h-px bg-cyan-400/50 hidden lg:block"></div>
               </div>
             </div>
 
@@ -333,9 +353,8 @@ export default function HeroScroll() {
                 <div className="text-white font-bold text-2xl md:text-4xl">
                   MVC Architecture
                 </div>
-                {/* Longer Connector Line Left */}
-                <div className="absolute top-1/2 right-full w-24 h-px bg-white/50 hidden lg:block"></div>
-                <div className="absolute top-1/2 right-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-white hidden lg:block"></div>
+                {/* Connector Line Left */}
+                <div className="absolute top-1/2 -left-24 w-24 h-px bg-white/50 hidden lg:block"></div>
               </div>
             </div>
 
@@ -346,9 +365,8 @@ export default function HeroScroll() {
                 <div className="text-blue-400 font-bold text-2xl md:text-4xl">
                   Code Optimization
                 </div>
-                {/* Longer Connector Line Right */}
-                <div className="absolute top-1/2 left-full w-24 h-px bg-blue-400/50 hidden lg:block origin-left -rotate-6"></div>
-                <div className="absolute -top-1 left-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-blue-400 hidden lg:block"></div>
+                {/* Connector Line Right */}
+                <div className="absolute top-1/2 -right-24 w-24 h-px bg-blue-400/50 hidden lg:block origin-left -rotate-6"></div>
               </div>
             </div>
           </motion.div>
