@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import WhatsappButton from "@/components/WhatsappButton";
+import Providers from "@/components/Providers";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${nevera.variable} font-sans bg-background text-white`}>
-        <Navbar />
-        {children}
-        <WhatsappButton />
+        <Providers>
+          <Navbar />
+          {children}
+          <WhatsappButton />
+        </Providers>
       </body>
     </html >
   );
