@@ -10,28 +10,28 @@ const projects = [
     type: "Enterprise System",
     description: "A secure banking platform implementing CMT and RBAC. Engineered for high concurrency and validated with JMeter load testing.",
     tech: ["Jakarta EE", "Hibernate", "MySQL"],
-    link: "#"
+    link: "https://github.com/PasanSWijekoon/Gotham-National-Banking-System"
   },
   {
     title: "Event Booking Platform",
     type: "Full Stack App",
     description: "Real-time event discovery application with seamless Firebase synchronization and a robust Spring Boot REST API.",
     tech: ["Spring Boot", "Android", "Firebase"],
-    link: "#"
+    link: "https://github.com/PasanSWijekoon/Soleia-Event-Booking-Application"
   },
   {
     title: "Secure Chat System",
     type: "Communication",
     description: "End-to-end encrypted messaging solution with low-latency delivery and JWT-based authentication.",
     tech: ["Java EE", "React Native", "WebSockets"],
-    link: "#"
+    link: "https://github.com/PasanSWijekoon/UMeeChat-App-FrontEnd"
   },
   {
     title: "IoT Piano Visualizer",
     type: "Hardware Integration",
     description: "Real-time audio visualization system connecting physical hardware inputs with digital rendering.",
     tech: ["C++", "IoT", "Processing"],
-    link: "#"
+    link: "https://github.com/PasanSWijekoon/IoT-Piano-Visualizer"
   }
 ];
 
@@ -46,7 +46,12 @@ export default function Projects() {
                 </h2>
                 <p className="text-slate-400 text-lg">Selected projects from my engineering journey.</p>
             </div>
-            <a href="#" className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors group">
+            <a 
+                href="https://github.com/PasanSWijekoon" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors group"
+            >
                 <span className="font-mono text-sm">View GitHub</span>
                 <ArrowUpRight size={18} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
             </a>
