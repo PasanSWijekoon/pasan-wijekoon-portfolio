@@ -6,29 +6,29 @@ import { Code2, Database, Layout, Terminal, Server, Cloud } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: "Languages",
+    title: "Languages & Core",
     icon: <Code2 className="text-cyan-400" size={20} />,
-    skills: ["Java", "TypeScript", "JavaScript", "PHP", "Python"]
+    skills: ["Java", "JavaScript", "TypeScript", "PHP", "SQL", "REST APIs"]
   },
   {
-    title: "Frameworks",
+    title: "Frameworks & Runtimes",
     icon: <Layout className="text-cyan-400" size={20} />,
-    skills: ["Spring Boot", "Next.js", "React", "Angular", "Express"]
-  },
-  {
-    title: "Backend & Cloud",
-    icon: <Cloud className="text-cyan-400" size={20} />,
-    skills: ["AWS", "Docker", "Kubernetes", "Microservices", "REST APIs"]
+    skills: ["Spring Boot", "Spring Security", "Hibernate", "JPA", "Node.js", "Express", "React", "React Native", "Angular"]
   },
   {
     title: "Databases",
     icon: <Database className="text-cyan-400" size={20} />,
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase"]
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis"]
   },
   {
-    title: "DevOps & Tools",
+    title: "Cloud & Infrastructure",
+    icon: <Cloud className="text-cyan-400" size={20} />,
+    skills: ["AWS", "AWS CloudFormation", "Docker", "Kubernetes", "Jenkins", "Maven", "Ansible"]
+  },
+  {
+    title: "DevOps & Observability",
     icon: <Terminal className="text-cyan-400" size={20} />,
-    skills: ["Git", "Jenkins", "Ansible", "Grafana", "ELK Stack"]
+    skills: ["Git", "GitHub", "GitLab", "JMeter", "Prometheus", "Grafana", "ELK Stack", "Sentry", "Datadog"]
   }
 ];
 
