@@ -16,7 +16,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                <h2 className="text-4xl md:text-6xl font-nevera text-white mb-6 tracking-tight uppercase">
                     Let's Build <br/> <span className="text-cyan-400">Something Great.</span>
                 </h2>
                 <p className="text-xl text-slate-400 font-light max-w-md">

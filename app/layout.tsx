@@ -7,7 +7,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const nevera = localFont({
-  src: "../fonts/Nevera-Regular.otf",
+  src: "./fonts/Nevera-Regular.otf",
   variable: "--font-nevera",
 });
 

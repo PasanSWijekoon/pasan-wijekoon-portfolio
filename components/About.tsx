@@ -23,7 +23,7 @@ export default function About() {
         </div>
 
         <div className="relative z-10 max-w-4xl">
-            <h2 className="text-sm font-mono text-cyan-400 mb-6 tracking-widest uppercase">About The Engineer</h2>
+        <h2 className="text-3xl md:text-5xl font-nevera mb-12 text-white/90 uppercase tracking-wider">About Me</h2>
             <div className="text-xl md:text-3xl font-light leading-relaxed text-slate-300 space-y-8">
                 <p>
                 I am a Software Engineering student driven by <span className="text-white font-medium border-b border-cyan-500/50 pb-0.5">complex problem solving</span>. My focus lies in architecting secure, scalable backend systems using Java & Spring Boot.

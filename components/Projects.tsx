@@ -40,8 +40,8 @@ export default function Projects() {
     <section id="projects" className="py-32 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-2 h-8 bg-cyan-500 rounded-full"></span>
+                <h2 className="text-3xl md:text-5xl font-nevera text-white mb-4 flex items-center gap-3 uppercase tracking-wider">
+                    <span className="w-2 h-10 bg-cyan-500 rounded-full"></span>
                     Featured Work
                 </h2>
                 <p className="text-slate-400 text-lg">Selected projects from my engineering journey.</p>
