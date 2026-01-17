@@ -15,6 +15,9 @@ const nevera = localFont({
 export const metadata: Metadata = {
   title: "Pasan Wijekoon | Software Engineer Intern",
   description: "Portfolio of Pasan Wijekoon, a Software Engineering student focused on Backend Systems, REST APIs, and Cloud Technologies.",
+  verification: {
+    google: "fGwLTeMhOQ5iP4CyZlp1exQ66xYXymwNli2OupsA4ng",
+  },
 };
 
 export default function RootLayout({
