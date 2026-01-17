@@ -13,8 +13,8 @@ import {
   GitBranch,
 } from "lucide-react";
 import { useLoading } from "@/context/LoadingContext";
-import LightRays from "@/components/LightRays/LightRays";
-import CircularText from "@/components/CircularText";
+import LightRays from "@/components/ui/LightRays/LightRays";
+import CircularText from "@/components/ui/CircularText/CircularText";
 
 const frameCount = 192;
 const frameUrls = Array.from(
