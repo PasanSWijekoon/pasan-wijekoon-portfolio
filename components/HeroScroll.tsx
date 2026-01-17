@@ -275,9 +275,9 @@ export default function HeroScroll() {
             className="absolute inset-0"
           >
             {/* Top Left (Far) */}
-            <div className="absolute top-[15%] left-0 md:-left-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-2 group">
+            <div className="absolute top-[25%] left-0 md:-left-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-2 group">
               <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
-                Problem-Solving
+                Problem Solving
               </h3>
             </div>
 
@@ -292,6 +292,13 @@ export default function HeroScroll() {
             <div className="absolute top-[50%] right-0 md:-right-[2%] glass-card px-8 py-5 rounded-2xl border-glow transform -rotate-1">
               <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
                 Teamwork
+              </h3>
+            </div>
+
+            {/* Bottom Right (Far) */}
+            <div className="absolute top-[75%] right-0 md:-right-[5%] glass-card px-8 py-5 rounded-2xl border-glow transform rotate-2">
+              <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
+                Communication
               </h3>
             </div>
 
@@ -315,8 +322,8 @@ export default function HeroScroll() {
                   OOP Principles
                 </div>
                 {/* Longer Connector Line Right */}
-                <div className="absolute top-1/2 -right-24 w-24 h-px bg-cyan-400/50 hidden lg:block"></div>
-                <div className="absolute top-1/2 -right-24 w-1.5 h-1.5 rounded-full bg-cyan-400 hidden lg:block"></div>
+                <div className="absolute top-1/2 left-full w-24 h-px bg-cyan-400/50 hidden lg:block"></div>
+                <div className="absolute top-1/2 left-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-cyan-400 hidden lg:block"></div>
               </div>
             </div>
 
@@ -327,8 +334,8 @@ export default function HeroScroll() {
                   MVC Architecture
                 </div>
                 {/* Longer Connector Line Left */}
-                <div className="absolute top-1/2 -left-24 w-24 h-px bg-white/50 hidden lg:block"></div>
-                <div className="absolute top-1/2 -left-24 w-1.5 h-1.5 rounded-full bg-white hidden lg:block"></div>
+                <div className="absolute top-1/2 right-full w-24 h-px bg-white/50 hidden lg:block"></div>
+                <div className="absolute top-1/2 right-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-white hidden lg:block"></div>
               </div>
             </div>
 
@@ -340,8 +347,8 @@ export default function HeroScroll() {
                   Code Optimization
                 </div>
                 {/* Longer Connector Line Right */}
-                <div className="absolute top-1/2 -right-24 w-24 h-px bg-blue-400/50 hidden lg:block origin-left -rotate-6"></div>
-                <div className="absolute -top-1 -right-24 w-1.5 h-1.5 rounded-full bg-blue-400 hidden lg:block"></div>
+                <div className="absolute top-1/2 left-full w-24 h-px bg-blue-400/50 hidden lg:block origin-left -rotate-6"></div>
+                <div className="absolute -top-1 left-[calc(100%+6rem)] w-1.5 h-1.5 rounded-full bg-blue-400 hidden lg:block"></div>
               </div>
             </div>
           </motion.div>
@@ -352,7 +359,7 @@ export default function HeroScroll() {
             className="absolute inset-0"
           >
             {/* Agile - Top Left */}
-            <div className="absolute top-[12%] left-0 md:-left-[5%] px-8 py-4 rounded-full bg-purple-500/10 border border-purple-500/30 backdrop-blur-md text-purple-300 font-bold text-2xl md:text-4xl transform -rotate-6">
+            <div className="absolute top-[22%] left-0 md:-left-[5%] px-8 py-4 rounded-full bg-purple-500/10 border border-purple-500/30 backdrop-blur-md text-purple-300 font-bold text-2xl md:text-4xl transform -rotate-6">
               Agile / Scrum
             </div>
 
