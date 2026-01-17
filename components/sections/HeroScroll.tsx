@@ -182,11 +182,11 @@ export default function HeroScroll() {
     <div ref={containerRef} className="h-[500vh] relative bg-[#02040a]">
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
         <LightRays 
-          raysColor="#0891b2"
+          raysColor="#3d575e"
           raysSpeed={0.2}
           lightSpread={0.3}
-          rayLength={0.8}
-          className="opacity-40"
+          rayLength={1.0}
+          className="opacity-80"
         />
         {/* Background Grid Overlay */}
         <div className="absolute inset-0 grid-bg opacity-30 z-0 pointer-events-none"></div>
