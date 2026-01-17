@@ -13,6 +13,8 @@ import {
   GitBranch,
 } from "lucide-react";
 import { useLoading } from "@/context/LoadingContext";
+import LightRays from "@/components/LightRays/LightRays";
+import CircularText from "@/components/CircularText";
 
 const frameCount = 192;
 const frameUrls = Array.from(
@@ -179,9 +181,25 @@ export default function HeroScroll() {
   return (
     <div ref={containerRef} className="h-[500vh] relative bg-[#02040a]">
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+        <LightRays 
+          raysColor="#0891b2"
+          raysSpeed={0.2}
+          lightSpread={0.3}
+          rayLength={0.8}
+          className="opacity-40"
+        />
         {/* Background Grid Overlay */}
         <div className="absolute inset-0 grid-bg opacity-30 z-0 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#02040a] z-10 pointer-events-none"></div>
+
+        <div className="absolute top-20 left-20 z-50 pointer-events-auto hidden md:block">
+          <CircularText
+            text="HI!*WELCOME*NICEDAY*"
+            spinDuration={20}
+            onHover="speedUp"
+            className="scale-[0.6] origin-top-left"
+          />
+        </div>
 
         {/* Loader */}
         {isLoading && (
