@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Deep Navy / Near-Black Theme */
+  --bg-dark: #02040a;
+  --bg-card: rgba(10, 15, 30, 0.4);
+  --accent-cyan: #00f0ff;
+  --accent-blue: #00a8ff;
+  --text-primary: #e0e6ed;
+  --text-secondary: #94a3b8;
+  --border-light: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  color: var(--text-primary);
+  background: radial-gradient(circle at 50% -20%, #0f172a 0%, #02040a 40%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-light);
+  }
+
+  .glass-nav {
+    background: rgba(2, 4, 10, 0.7);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 15px rgba(0, 168, 255, 0.1);
+  }
+
+  .grid-bg {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+  
+  /* Marquee Animation */
+  .marquee-container {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  
+  .marquee-content {
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+html {
+    scroll-behavior: smooth;
+}
