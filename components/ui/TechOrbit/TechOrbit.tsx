@@ -62,26 +62,18 @@ export default function TechOrbit({ className = "" }: { className?: string }) {
           return (
             <div
               key={item.label}
-              className="absolute top-0 left-1/2 -ml-6 -mt-6"
+              className="absolute top-0 left-1/2"
               style={{
-                // Position around the circle
-                height: "100%", // The item wrapper spans the full height to pivot around center
-                width: "48px", // Wrapper width
-                left: "50%",
-                top: "0",
-                marginLeft: "-24px", // Center the wrapper
+                height: "100%",
+                width: "48px",
+                marginLeft: "-24px",
                 transform: `rotate(${angle}deg)`,
-                transformOrigin: "center center", // Standard rotation around center of container? No.
-                // If I make the wrapper full height (diameter), and rotate it, the top of the wrapper is the edge.
-                // The item is at the top of the wrapper.
+                transformOrigin: "center center",
               }}
             >
-               {/* 
-                  Wait, if I rotate a full-height div around the center, the top part stays at the top? No.
-                  If I rotate 90deg, the top part is at the right.
-                  So `transform: rotate(angle)` on a full-size absolute div centered in the parent works.
-               */}
-              <ItemContent item={item} rotate={rotate} angle={angle} />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <ItemContent item={item} rotate={rotate} angle={angle} />
+              </div>
             </div>
           );
         })}
