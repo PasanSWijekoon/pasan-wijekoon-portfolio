@@ -9,7 +9,7 @@ A modern, high-performance portfolio website built with **Next.js 14**, **TypeSc
 -   **Smooth Animations:** Powered by **Framer Motion** for entrance effects and interactive components.
 -   **Responsive Design:** Fully adaptive layout using Tailwind CSS utility classes.
 -   **Custom Typography:** Integration of custom fonts (Nevera) and optimized Google Fonts (Inter).
--   **Interactive Elements:** Glassmorphism effects, custom-styled navigation, and a functional contact section.
+-   **Interactive Elements:** Glassmorphism effects, custom-styled navigation, TechOrbit visualization, and a functional contact section.
 
 ## 🛠️ Technology Stack
 
@@ -23,19 +23,20 @@ A modern, high-performance portfolio website built with **Next.js 14**, **TypeSc
 ## 📂 Project Structure
 
 ```text
-├── app/               # App Router pages, layout, and global styles
-│   ├── fonts/         # Local font files
-│   ├── globals.css    # Tailwind & global CSS
-│   ├── layout.tsx     # Root layout & Metadata
-│   └── page.tsx       # Main landing page
-├── components/        # Reusable UI components
-│   ├── About.tsx      # About section
-│   ├── HeroScroll.tsx # Hero section with scroll effects
-│   ├── Navbar.tsx     # Navigation pill
-│   └── ...
-├── public/            # Static assets (images, animations)
-├── tailwind.config.ts # Custom theme & Tailwind settings
-└── tsconfig.json      # TypeScript configuration
+├── app/                  # App Router pages, layout, and global styles
+│   ├── fonts/            # Local font files
+│   ├── globals.css       # Tailwind & global CSS
+│   ├── layout.tsx        # Root layout & Metadata
+│   └── page.tsx          # Main landing page
+├── components/           # Reusable UI components
+│   ├── layout/           # Layout components like Navbar
+│   ├── providers/        # Context providers
+│   ├── sections/         # Main page sections (About, Skills, Projects, etc.)
+│   └── ui/               # UI components (TechOrbit, Buttons, etc.)
+├── context/              # React Context definitions
+├── public/               # Static assets (images, animations)
+├── tailwind.config.ts    # Custom theme & Tailwind settings
+└── tsconfig.json         # TypeScript configuration
 ```
 
 ## 🏁 Getting Started
@@ -73,14 +74,13 @@ npm run build
 npm run start
 ```
 
-
-
 ## ✉️ Contact
 
 Looking for a dedicated Software Engineer Intern for 2025/2026? Let's build something great.
 
--   **Email:** [hello@example.com](mailto:wijekoonpasan055@gmail.com)
--   **Website:** [pasanwijekoon.dev](https://pasanwijekoon.dev)
+-   **Email:** [wijekoonpasan055@gmail.com](mailto:wijekoonpasan055@gmail.com)
+-   **Phone:** +94 719376447
+-   **Location:** Sri Lanka (Open to Remote)
 
 ---
 
