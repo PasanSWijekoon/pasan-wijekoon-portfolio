@@ -8,29 +8,87 @@ const skillCategories = [
   {
     title: "Languages & Core",
     icon: <Code2 className="text-cyan-400" size={20} />,
-    skills: ["Java", "JavaScript", "TypeScript", "PHP", "SQL", "REST APIs"]
+    skills: [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "C",
+      "C#",
+      "SQL",
+      "RESTful APIs"
+    ]
   },
   {
-    title: "Frameworks & Runtimes",
+    title: "Frameworks & Libraries",
     icon: <Layout className="text-cyan-400" size={20} />,
-    skills: ["Spring Boot", "Spring Security", "Hibernate", "JPA", "Node.js", "Express", "React", "React Native", "Angular"]
+    skills: [
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "JPA",
+      "Jakarta EE",
+      "Node.js",
+      "Express.js",
+      "React",
+      "Next.js",
+      "React Native",
+      "Angular",
+      "Redux"
+    ]
   },
   {
     title: "Databases",
     icon: <Database className="text-cyan-400" size={20} />,
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis"]
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Firebase",
+      "Redis"
+    ]
   },
   {
-    title: "Cloud & Infrastructure",
+    title: "Cloud & DevOps",
     icon: <Cloud className="text-cyan-400" size={20} />,
-    skills: ["AWS", "AWS CloudFormation", "Docker", "Kubernetes", "Jenkins", "Maven", "Ansible"]
+    skills: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "CloudFormation",
+      "Ansible",
+      "CI/CD"
+    ]
   },
   {
-    title: "DevOps & Observability",
+    title: "Testing & Monitoring",
     icon: <Terminal className="text-cyan-400" size={20} />,
-    skills: ["Git", "GitHub", "GitLab", "JMeter", "Prometheus", "Grafana", "ELK Stack", "Sentry", "Datadog"]
+    skills: [
+      "JMeter",
+      "Prometheus",
+      "Grafana",
+      "ELK Stack",
+      "Sentry",
+      "Datadog",
+      "Postman"
+    ]
+  },
+  {
+    title: "IoT & Game Development",
+    icon: <Server className="text-cyan-400" size={20} />,
+    skills: [
+      "ESP32",
+      "Arduino",
+      "C++",
+      "Unity",
+      "Game Optimization",
+      "AI Navigation"
+    ]
   }
 ];
+
 
 export default function Skills() {
   return (
