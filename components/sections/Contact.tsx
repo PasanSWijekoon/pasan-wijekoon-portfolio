@@ -183,9 +183,9 @@ export default function Contact() {
 
       </div>
       
-      <footer className="mt-24 pt-8 border-t border-white/5 text-center text-slate-600 text-sm flex items-center justify-center gap-2">
+      <footer className="mt-24 pt-8 border-t border-white/5 text-center text-slate-600 text-sm flex flex-col md:flex-row items-center justify-center gap-2">
          <span>&copy; {new Date().getFullYear()} Pasan Wijekoon.</span>
-         <span className="w-1 h-1 bg-slate-600 rounded-full"></span>
+         <span className="hidden md:block w-1 h-1 bg-slate-600 rounded-full"></span>
          <span>Engineered with Next.js 14 & Framer Motion.</span>
       </footer>
     </section>
